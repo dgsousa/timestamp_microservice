@@ -11,9 +11,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.4.5"
-  }
+  "license": "ISC"
 }

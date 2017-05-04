@@ -3,13 +3,14 @@ const querystring = require("querystring");
 const fs = require("fs");
 const path = require("path");
 const index = fs.readFileSync(path.join(__dirname, "../public/index.html"), {encoding: "utf8"});
+const port = process.env.PORT || 3000;
 
 
 const server = http.createServer((req, res) => {
 	homeRoute(req, res);
 	formRoute(req, res);
 	dateRoute(req, res);
-}).listen(3000);
+}).listen(port);
 console.log("server is running on port 3000");
 
 
