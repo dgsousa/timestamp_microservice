@@ -30,6 +30,7 @@ const formRoute = (req, res) => {
 			body += chunk;
 		})
 		req.on("end", () => {
+			console.log(body);
 			let query = querystring.parse(body.toString()).date;
 			res.writeHead(303, {"Location": "/" + query});
 			res.end();
